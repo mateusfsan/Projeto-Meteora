@@ -1,0 +1,91 @@
+/*Cores Primárias do site*/
+:root {
+  --cor-primaria: #000000;
+  --cor-secundaria: #CCCCCC;
+  --cor-texto: #DAFF01;
+  --cor-fundo: #9353FF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   color: var(--cor-secundaria, #CCCCCC);
+   font-size: 16;
+   font-family: 'Inter', sans-serif;
+}
+
+/*header principal*/
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  background-color: var(--cor-primaria);
+  height: 58px;
+  width: 100%;
+}
+
+.esquerda {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+    margin-left: 3em;
+    width: 150px;
+    height: 32px;
+}
+
+.nav-bar ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+li{
+    margin-right: 3em;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--cor-secundaria);
+}
+
+.nav-bar a:hover {
+  color: var(--cor-texto);
+}
+
+.barra-pesquisa {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px;
+  margin-right: 2em;
+  border-radius: 20px;
+}
+
+.barra-pesquisa input {
+  text-align: center;
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  flex: 1;
+}
+
+.barra-pesquisa button {
+  background-color: var(--cor-primaria, #3498db);
+  color: white;
+  width: 80px;
+  height: 37px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+}
