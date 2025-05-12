@@ -89,3 +89,26 @@ li{
   border-radius: 20px;
   cursor: pointer;
 }
+
+/* Responsividade da barra de pesquisa */
+@media (max-width: 768px) {
+  .cabecalho {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 1em;
+    height: auto;
+  }
+
+  .esquerda {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .barra-pesquisa {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+}
