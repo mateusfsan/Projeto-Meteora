@@ -1,0 +1,39 @@
+.hamburguer {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 2em;
+}
+
+.hamburguer span {
+  height: 3px;
+  width: 100%;
+  background-color: var(--cor-texto);
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .hamburguer {
+    display: flex;
+  }
+
+  .nav-bar ul {
+    display: none;
+    flex-direction: column;
+    background-color: var(--cor-primaria);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 50%;
+    padding: 1em;
+  }
+
+  .nav-bar ul.active {
+    display: flex;
+  }
+}
