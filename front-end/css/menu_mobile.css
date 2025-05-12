@@ -36,4 +36,9 @@
   .nav-bar ul.active {
     display: flex;
   }
+
+  .barra-pesquisa{
+    width: 100%;
+    background-color: white;
+  }
 }
