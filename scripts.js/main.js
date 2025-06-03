@@ -4,11 +4,11 @@
 
   // Abrir e fechar ao clicar no botão
   btnMenu.addEventListener('click', (e) => {
-    e.stopPropagation(); // Impede o clique de fechar o menu imediatamente
+    e.stopPropagation();
     menu.classList.toggle('active');
   });
 
-  // Fechar ao clicar fora
+    //fechar ao clicar fora
   document.addEventListener('click', (e) => {
     if (!menu.contains(e.target) && !btnMenu.contains(e.target)) {
       menu.classList.remove('active');

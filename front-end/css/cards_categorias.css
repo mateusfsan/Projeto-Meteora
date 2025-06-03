@@ -1,3 +1,11 @@
+.busque_categorias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+
 .categorias {
   display: flex;
   justify-content: center; /* ou space-between se houver vários */
