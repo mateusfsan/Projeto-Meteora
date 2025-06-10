@@ -52,6 +52,7 @@
   color: white;
   cursor: pointer;
   margin-top: auto; /* <-- ESSENCIAL para alinhar o botão embaixo */
+  margin-bottom: 8px;
 }
 
 /* Responsividade */
