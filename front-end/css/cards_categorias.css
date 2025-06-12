@@ -38,6 +38,8 @@
 
 .card-text {
   display: flex;
+  align-items: center;       
+  justify-content: center;   
   align-items: center;       /* Alinha verticalmente */
   justify-content: center;   /* Alinha horizontalmente */
   background-color: var(--cor-primaria);
@@ -49,5 +51,8 @@
 .card-text p {
   font-size: 16px;
   color: white;
+  margin: 0;
+}
   margin: 0; /* remove espaçamento padrão do <p> */
 }
+
