@@ -1,0 +1,82 @@
+.secao_email {
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+}
+
+.conteudo_secao_email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: solid 2px var(--cor-secundaria);
+    width: 43.75em; 
+    padding: 20px;
+    gap: 1em;
+}
+
+.input_email {
+    text-align: center;
+    width: 29.375em; 
+    height: 2.5em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.enviar {
+    color: white;
+    background-color: var(--cor-fundo);
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 5px;
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+    .conteudo_secao_email {
+        width: 90%;
+        padding: 1.5em;
+    }
+
+    .input_email {
+        width: 100%;
+    }
+
+    .enviar {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 599px) {
+    .secao_email {
+        padding: 1.5em 1em;
+    }
+
+    .conteudo_secao_email {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .input_email {
+        width: 100%;
+        font-size: 0.95em;
+    }
+
+    .enviar {
+        margin-top: 4px;
+        width: 50%;
+        font-size: 0.95em;
+    }
+}
