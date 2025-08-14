@@ -1,3 +1,4 @@
+/* Botão hamburguer */
 .hamburguer {
   display: none;
   flex-direction: column;
@@ -7,37 +8,85 @@
   background: none;
   border: none;
   cursor: pointer;
+  z-index: 2002; /* acima do dropdown */
 }
-
 .hamburguer span {
   height: 3px;
   width: 100%;
-  background-color: var(--cor-texto);
+  background-color: var(--cor-primaria, #111);
   border-radius: 2px;
+  display: block;
 }
 
+/* Estrutura de topo */
+.cabecalho {
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  background: black;
+  border-bottom: 1px solid black;
+}
+.cabecalho .esquerda {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: .75rem 1rem;
+  position: relative; /* âncora do dropdown no mobile */
+}
+.logo { height: 36px; }
+.nav-bar ul {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  padding: .5rem .25rem;
+  display: inline-block;
+}
+
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
   .hamburguer {
     display: flex;
+    margin-left: auto; /* empurra o botão pra direita */
+  }
+
+  /* transforma o nav em dropdown colado à direita */
+  .nav-bar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 2001;
   }
 
   .nav-bar ul {
-    display: none;
+    position: relative; /* relativo ao nav acima */
+    display: none;      /* fechado */
     flex-direction: column;
-    background-color: var(--cor-primaria);
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 50%;
-    padding: 1em;
+    width: 220px;
+    background: #000;
+    border: 1px solid #222;
+    margin: 0;
+    padding: .5rem 0;
   }
+  .nav-bar ul.active { display: flex; }
 
-  .nav-bar ul.active {
-    display: flex;
-  }
-
-  .barra-pesquisa{
+  .nav-bar a {
+    color: #fff;
+    padding: .75rem 1rem;
     width: 100%;
-    background-color: white;
+  }
+
+  .barra-pesquisa {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    gap: .5rem;
+    margin: .5rem 1rem 1rem;
   }
 }
+
