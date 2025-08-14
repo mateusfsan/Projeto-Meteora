@@ -36,7 +36,7 @@
   // Tablet
   imagem1.src = "../assets/img/Banner_tablet.png";
   imagem2.src = "../assets/img/COLEÇÃO ATEMPORAL_tablet.png";
-  imagem3.src = "../assets/img/COLEÇÃO ATEMPORAL(1)_tablet.png";
+  imagem3.src = "../assets/img/COLEÇÃO ATEMPORAL (1)_tablet.png";
 
 } else {
   // Desktop
